@@ -1,4 +1,6 @@
 Szkolny sklepik 
+
+
 Cel projektu
 Ułatwienie zarządzania sprzedażą oraz umożliwienie uczniom przeglądania i zamawiania produktów dostępnych w sklepiku szkolnym. (Interfejs użytkownika i administratora)
 
