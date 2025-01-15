@@ -64,7 +64,7 @@ struktura projektu:
 	- docker-compose.yml
 
 
-aby dodać zdjecie trzeba najpierw wrzucić je do folderu public/product_images, a nastepnie przy podawac image_url podac zgodną nazwę ze zdjęciem
+aby dodać zdjecie produktu trzeba najpierw wrzucić je do folderu public/product_images, a nastepnie przy podawaniu image_url podać zgodną nazwę ze zdjęciem
 
 Uruchomienie projektu (ścieżka -> komenda):
 /school-shop -> docker compose -up
