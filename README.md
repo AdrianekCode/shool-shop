@@ -63,6 +63,9 @@ struktura projektu:
 		-(react)
 	- docker-compose.yml
 
+
+aby dodać zdjecie trzeba najpierw wrzucić je do folderu public/product_images, a nastepnie przy podawac image_url podac zgodną nazwę ze zdjęciem
+
 Uruchomienie projektu (ścieżka -> komenda):
 /school-shop -> docker compose -up
 /backend -> node index.js
