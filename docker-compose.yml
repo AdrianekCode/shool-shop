@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: school_shop
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: school_shop
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
+    volumes:
+      - mysql_data_school_shop:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - school-shop-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin_school_shop
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: root_password
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    networks:
+      - school-shop-network
+
+volumes:
+  mysql_data_school_shop:
+
+networks:
+  school-shop-network:
+    # driver: bridge
+    driver: local
