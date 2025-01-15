@@ -1,4 +1,4 @@
-Szkolny sklepik 
+Szkolny sklepik - Adrian Szmandra 4AP
 
 
 Cel projektu
